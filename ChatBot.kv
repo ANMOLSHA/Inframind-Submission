@@ -1,0 +1,25 @@
+#:kivy 1.11.1
+
+<MyLayout>:
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            id: name_label
+            text: "Hello human what is your name?"
+            font_size: 32
+            color:"blue"
+                
+        TextInput:
+            id: name_input
+            multiline: False
+            size_hint: (1, .5)
+
+        Button:
+            size_hint: (1, .5)
+            font_size: 32
+            text: "Submit"
+            color:"black"
+            on_press: root.press()
+
